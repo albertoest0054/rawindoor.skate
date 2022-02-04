@@ -1,0 +1,74 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page_v2
+title: LOCALIZACIÓN
+group: "navigation"
+---
+
+<meta name="referrer" content="no-referrer"> <!-- don't send HTTP referer for privacy purpose and to use Google Maps Geocoding API without key -->
+
+<!-- <h1>My First Google Map</h1> -->
+
+<p>
+    Nuestras instalaciones se encuentran en el Polígono Industrial la Portalada, calle Serón (F), 9. Logroño, La Rioja.
+    Para cualquier consulta relacionada con las instalaciones puede llamarnos al 941 433 508 o escribirnos a info@rawindoor.com
+</p>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+
+<h2>Cómo llegar — </h2>
+
+<h3>Circunvalación de Logroño LO-20 (dirección Zaragoza):</h3>
+
+    <ul>
+        <li>Cruzamos el puente sobre el rio Iregua, y a 200 metros, tenemos la salida 1B al polígono de la Portalada (Sur), hacia la derecha.</li>
+        <li>Llegamos a la rotonda, y en la cuarta salida, tenemos una vía, que va paralela a la circunvalación (dirección a Logroño),  calle Serón (calle F).</li>
+        <li>450 metros por la calle Serón (calle F), y llegamos al centro, a la derecha.</li>
+    </ul>
+
+<h3>Circunvalación de Logroño LO-20 (dirección Logroño):</h3>
+
+    <ul>
+        <li>En la circunvalación LO-20, tenemos la salida 1B al polígono de la Portalada (Sur), hacia la derecha.</li>
+        <li>En la rotondatoma la segunda salida, tenemos una vía, que va paralela a la circunvalación (dirección a Logroño),  calle Serón (calle F)..</li>
+        <li>450 metros por la calle Serón (calle F), y llegamos al centro, a la derecha.</li>
+    </ul>
+
+<h3>Rotonda del Centro comercial EROSKI (Mediamarkt):</h3>
+
+    <ul>
+        <li>Dirígete hacia el este en Av. Zaragoza hacia Parque de los Lirios.</li>
+        <li>Pasa una rotonda.</li>
+        <li>750 m.</li>
+        <li>Gira ligeramente a la derecha para acceder al ramal en dirección Varea.</li>
+        <li>Gira a la izquierda hacia Calle Picón.</li>
+        <li>En la rotonda, toma la segunda salida en dirección Calle la Portalada.</li>
+        <li>Gira a la derecha hacia Calle Circunde.</li>
+        <li>180 m.</li>
+        <li>En la rotonda, toma la primera salida en dirección Calle F.</li>
+        <li>9 m.</li>
+        <li>Sal de la rotonda en Calle F</li>
+        <li>El destino está a la derecha.</li>
+        <li>450 m.</li>
+    </ul>
+
+    <img src="{{site.url}}/assets/img/como-llegar2.jpg" style="height:400px;width: 100%;">
+
+<script>
+
+    function myMap() {
+        
+        var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="{{site.url}}/assets/css/nav.css">
+
+<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+
+<div class="topnav" id="myTopnav">
+
+    <!-- <a href="{{site.url}}/index.html" class="active">Blog</a>
+    <a href="{{site.url}}/about">About</a>
+    <a href="{{site.url}}/demos">Demos</a> -->
+
+    <!-- <ul> -->
+
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include pages_list.html %}
+
+    <!-- </ul> -->
+
+</div>

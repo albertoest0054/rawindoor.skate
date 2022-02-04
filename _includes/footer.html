@@ -1,0 +1,73 @@
+<div class="footer">
+
+    <style>
+        .footer{
+            padding: 10px;
+            text-align: center;
+            background: #1abc9c;
+            color: rgb(255, 255, 255);;
+            font-size: 12px;
+
+            border: 2px solid rgb(255, 0, 179);
+            border-radius: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            /* background-color: #2196F3; */
+            /* padding: 10px; */
+            }
+
+            .grid-container > div {
+            /* background-color: rgba(255, 255, 255, 0.2); */
+            padding: 0px 10px;
+            font-size: 14px;
+            text-align:left;
+            }
+
+            /* .item4 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            } */
+    </style>
+
+    <link rel="stylesheet" href="{{site.url}}/assets/css/rotate.css">
+
+    <div class="grid-container">
+
+        <div class="item1" id="rotator">
+            <img src="{{site.url}}/assets/img/RAW.png" alt="RAW LOGO" width="151" height="128" align="center" class="rotate">
+        </div>
+
+        <div class="item2">
+            <p class="right">{{site.description}}</p>
+
+            <p align="center">
+                &copy; 2022 RAW INDOOR
+            </p>
+        </div>
+
+        <div class="item3">
+            <p>Maecenas tempor massa sed aliquet mattis. Nam ac arcu arcu. Nunc tempor vel urna vitae tristique. 
+                Quisque aliquam efficitur nibh, quis dignissim velit vulputate non.
+            </p>
+
+            <p align="center">
+                <a href="https://www.youtube.com/watch?v=cwzR-Pfv0n4" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/rawindoor.skate/" class="fa fa-instagram"></a>
+                <a href="https://www.instagram.com/rawindoor.skate/" class="fa fa-facebook"></a>
+            </p>
+        </div>  
+        <!-- <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>   -->
+      </div>
+
+      <!-- https://www.w3schools.com/css/css_grid.asp
+      https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines2 -->
+
+</div>

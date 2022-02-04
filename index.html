@@ -1,0 +1,158 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page_v2
+title: HORARIOS
+group: "navigation"
+---
+
+<link rel="stylesheet" href="{{site.url}}/assets/css/table.css">
+<link rel="stylesheet" href="{{site.url}}/assets/css/wrap.css">
+
+<p>
+    Consulta el siguiente horario para ver las clases disponibles a lo largo de la samana. 
+    Los grupos de clases están orientados por nivel y número de alumnos, en cada uno se admiten entre 4-7 personas.
+    Clike o seleccione los grupos para más información.
+</p>
+    
+<br>         
+
+<table>
+    <body>
+    <tr>
+        <th> </th>
+        <th  class="stage-saturn">Lunes</th>
+        <th  class="stage-saturn">Martes</th>
+        <th  class="stage-saturn">Miercoles</th>
+        <th  class="stage-saturn">Jueves</th>
+        <th  class="stage-saturn">Viernes</th>
+        <th  class="stage-saturn">Sábado</th>
+    </tr>
+
+    <tr>
+        <th>10:00</th>
+        <!-- <td colspan="4" class="stage-earth">Speaker Three <span>Earth Stage</span></td> -->
+    </tr>
+    <tr>
+        <th>10:30</th>
+        <!-- <td colspan="4" class="stage-earth">Speaker Four <span>Earth Stage</span></td> -->
+    </tr>
+    <tr>
+        <th>11:00</th>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td rowspan="2" class="grupo s1" onclick="create_group_data(var_s1)">Grupo 1</td>
+        <script type="text/javascript">var var_s1="data_grupo_a";</script>
+    </tr>
+    <tr>
+        <th>11:30</th>
+    </tr>
+    <tr>
+        <th>12:00</th>
+        <td rowspan="2" class="stage-mercury"></td>
+        <td rowspan="2" class="stage-venus"></td>
+        <td rowspan="2" class="stage-mars"></td>
+        <td rowspan="2" class="stage-saturn"></td>
+        <td rowspan="2" class="stage-saturn"></td>
+        <td rowspan="2" class="grupo s2" onclick="create_group_data(var_s2)">Grupo 2</td>
+        <script type="text/javascript">var var_s2="data_grupo_b";</script>
+    </tr>
+    <tr>
+        <th>12:30</th>
+    </tr>
+    <tr>
+        <th>13:00</th>
+    </tr>
+    <tr>
+        <th>13:30</th>
+    </tr>
+    <tr>
+        <th>14:00</th>
+        <td colspan="7" rowspan="3" class="stage-saturn">Break</td>
+    </tr>
+    <tr>
+        <th>...</th>
+    </tr>
+    <tr>
+        <th>16:30</th>
+    </tr>
+    <tr>
+        <th>17:00</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="2" class="grupo c">Grupo C</td>
+        <td rowspan="8" class="stage-saturn"></td>
+    </tr>
+    <tr>
+        <th>17:30</th>
+        <td rowspan="2" class="grupo a" onclick="create_group_data(var_a)">Grupo A</td>
+        <td rowspan="2" class="grupo b" onclick="create_group_data(var_b)">Grupo B</td>
+        <td rowspan="2" class="grupo a" onclick="create_group_data(var_a)">Grupo A</td>
+        <td rowspan="2" class="grupo b" onclick="create_group_data(var_b)">Grupo B</td>
+
+        <script type="text/javascript">var var_a="data_grupo_a";</script>
+        <script type="text/javascript">var var_b="data_grupo_b";</script>
+    </tr>
+    <tr>
+        <th>18:00</th>
+    </tr>
+    <tr>
+        <th>18:30</th>
+        <td rowspan="2" class="stage-mercury"></td>
+        <td rowspan="2" class="stage-venus"></td>
+        <td rowspan="2" class="stage-mars"></td>
+        <td rowspan="2" class="grupo adultos" onclick="create_group_data(var_adl)">Adultos</td>
+        <td rowspan="2" class="stage-saturn"></td>
+
+        <script type="text/javascript">var var_adl="data_grupo_adl";</script>
+    </tr>
+    <tr>
+        <th>19:00</th>
+    </tr>
+    <tr>
+        <th>19:30</th>
+    </tr>
+    <tr>
+        <th>20:00</th>
+        <td rowspan="2" class="stage-mercury"></td>
+        <td rowspan="2" class="stage-venus"></td>
+        <td rowspan="2" class="stage-mars">Unirioja</td>
+        <td rowspan="2" class="stage-saturn"></td>
+        <td rowspan="2" class="stage-saturn"></td>
+    </tr>
+    <tr>
+        <th>20:30</th>
+        <!-- <td colspan="4" rowspan="2" class="stage-saturn">Drinks</td> -->
+    </tr>
+    <tr>
+        <th>21:00</th>
+    </tr>
+    </body>
+</table>
+
+<br>
+
+<!-- <div class="info" id ="container">
+          
+    <h3>Seleccione un grupo para ver información</h3>
+    
+</div>  -->
+
+{% include group-info.html %}
+
+<br>
+
+<div class="box"></div>
+
+<script src="{{site.url}}/assets/data/grupo-a.js"></script>
+<script src="{{site.url}}/assets/data/grupo-b.js"></script>
+<script src="{{site.url}}/assets/data/grupo-c.js"></script>
+<script src="{{site.url}}/assets/data/grupo-adl.js"></script>
+
+<script src="{{site.url}}/assets/js/parse.js"></script>

@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="{{site.url}}/assets/css/blog.css">
+
+<div class="post">
+    <a href="{{site.url}}{{post.url}}">{{post.title}}</a>
+    <p>{{post.date}}</p>
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+</div>

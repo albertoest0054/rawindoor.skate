@@ -1,0 +1,25 @@
+---
+layout: page_v2
+title: NOTICIAS
+group: "navigation"
+---
+
+<link rel="stylesheet" href="{{site.url}}/assets/css/blog.css">
+
+<div class="child">
+
+    {% for post in site.posts %}
+
+        {% if post.categories contains 'cursos' %}
+
+        {% else %}
+
+            {% include post.html %}
+
+            <br>
+
+        {% endif %}
+
+    {% endfor %}
+
+</div>

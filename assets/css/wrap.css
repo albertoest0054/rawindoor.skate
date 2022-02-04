@@ -1,0 +1,47 @@
+.group
+{
+	display: flex;
+	width:90%;
+	height: 128px;
+	margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon
+{
+	float: left;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+.info 
+{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	/* padding: 10px; */
+	text-align: center;
+	background: #ffffff;
+	color: rgb(0, 0, 0);;
+	font-size: 15px;
+  
+	border: 2px solid rgb(255, 0, 0);
+	border-radius: 5px;
+}
+
+.wrap
+{	
+	float: left;
+	width: auto;
+	height: 128px;
+	
+	border-radius: 5px;
+	
+	background-color:#CCC;
+}
+
+.wraper
+{
+	padding:5px;
+}	

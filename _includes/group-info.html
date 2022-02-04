@@ -1,0 +1,55 @@
+<div class="group">
+    
+    <div class="icon" id="icon-container">
+    
+        <img src="{{site.url}}/assets/img/grupo-a.png" alt="icon" height="128" width="128">
+
+    </div>
+    
+    <div class="info" id ="container">
+     
+        <h3>NO HAY SELECCiÓN</h3>
+
+        <p>Seleccione un grupo para ver información</p>
+        
+        <button type="button">></button> 
+        
+    </div>
+
+</div>
+
+<script>
+
+    function myFunction2() {
+
+        alert("HOLA");
+    }
+
+    function create_group_data(funcName)
+    {
+        // pass propper data;
+
+        let data = eval(funcName+"()"); // EVAL
+
+        // Display propper icon:
+
+        // parse XML content string to XML DOM object
+
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(data, 'text/xml');
+        var icon = xmlDoc.getElementsByTagName('icon')[0].childNodes[0].nodeValue;
+
+        let string1 = "<img src='{{site.url}}" + icon + "' alt='icon' height='128' width='128'>"
+
+        document.getElementById("icon-container").innerHTML = string1;
+
+        // Create banner
+
+        let string2 = parse_XML(data);
+
+        document.getElementById("container").innerHTML = string2;
+    }
+
+    // Create structure to display frame data;
+
+</script>
