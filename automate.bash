@@ -10,11 +10,13 @@ cp -r ./_site/* ../raw_build;
 
 # Save where you are and cd to other dir
 pushd ../raw_build;
-# command --key
 
     pwd;
 
-    git add .
+    git add .;
+
+    # list remote
+    git remote -v;
 
     # random txt & num
     randomTxt=$(cat /dev/urandom | tr -dc '[:alpha:]' | fold -w ${1:-4} | head -n 1);
@@ -25,17 +27,14 @@ pushd ../raw_build;
 
     # create the commit
     git commit -m "$randomTxt$randomNum";
-
-    # push to github
-
-    git remote -v;
     # View the existing remotes
     # origin  https://github.com/user/repo-1.git (fetch)
     # origin  https://github.com/user/repo-1.git (push)
 
-    # sudo git remote set-url origin git@github.com:albertoest0054/rawindoor.skate.git;
-    # hecho a mano;
+    # desde root funciona -> asegurarte mano 
+    sudo git remote set-url origin git@github.com:albertoest0054/rawindoor.skate.git;
 
+    # push to github
     git push -f --set-upstream origin master;
 
 # Get back where you were at the beginning.
