@@ -1,0 +1,56 @@
+table {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #ff5757;
+    color: white;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .grupo 
+  {
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .a {
+    background-color: tomato;
+  } 
+
+  .b {
+    background-color: rgb(71, 255, 138);
+  } 
+
+  .c {
+    background-color: rgb(71, 89, 255);
+
+  } 
+
+  .s1 {
+    background-color: rgb(255, 71, 224);
+  } 
+
+  .s2 {
+    background-color: rgb(255, 71, 126);
+
+  } 
+  
+  .adultos {
+    background-color: rgb(255, 71, 71);
+  } 
